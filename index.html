@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eef5fb" />
+    <meta name="description" content="Convite de casamento de Ana Cristina e Gilberto." />
+    <title>Ana Cristina &amp; Gilberto | Convite de casamento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <h1 class="sr-only">Convite de casamento de Ana Cristina e Gilberto</h1>
+
+      <div class="invitation-stage" id="invitation">
+        <section class="cover-screen" id="cover">
+          <img class="full-art" src="assets/capa-convite.png" alt="Ana Cristina e Gilberto diante de um envelope azul" draggable="false" />
+          <button class="seal-button" id="open-invitation" type="button" aria-label="Abrir o convite">
+            <span class="seal-focus" aria-hidden="true"></span>
+          </button>
+        </section>
+
+        <section class="details-screen" id="details" aria-hidden="true">
+          <img class="full-art" src="assets/convite-base.png" alt="Convite de casamento de Ana Cristina e Gilberto, dia 31 de outubro de 2026" draggable="false" />
+
+          <div class="blank-layer blank-title" aria-hidden="true"><img src="assets/referencia-sem-texto.png" alt="" draggable="false" /></div>
+          <div class="blank-layer blank-verse" aria-hidden="true"><img src="assets/referencia-sem-texto.png" alt="" draggable="false" /></div>
+          <div class="title-reveal art-reveal" aria-hidden="true"><img src="assets/convite-base.png" alt="" draggable="false" /></div>
+
+          <div class="verse-reveal verse-one art-reveal" aria-hidden="true"><img src="assets/convite-base.png" alt="" draggable="false" /></div>
+          <div class="verse-reveal verse-two art-reveal" aria-hidden="true"><img src="assets/convite-base.png" alt="" draggable="false" /></div>
+          <div class="verse-reveal verse-three art-reveal" aria-hidden="true"><img src="assets/convite-base.png" alt="" draggable="false" /></div>
+          <div class="verse-reveal verse-four art-reveal" aria-hidden="true"><img src="assets/convite-base.png" alt="" draggable="false" /></div>
+
+          <nav aria-label="Links do convite">
+            <a class="invite-link link-church" href="https://maps.app.goo.gl/PqFTadn3dCqaFqGq9" target="_blank" rel="noopener noreferrer" aria-label="Abrir o local da igreja no mapa"></a>
+            <a class="invite-link link-party" href="https://maps.app.goo.gl/kjM5jeK4kf5hNNhw9" target="_blank" rel="noopener noreferrer" aria-label="Abrir o local da festa no mapa"></a>
+            <a class="invite-link link-pix" href="https://artbymila.github.io/PIX/" target="_blank" rel="noopener noreferrer" aria-label="Abrir a página do presente via Pix"></a>
+            <a class="invite-link link-rsvp" href="https://w.app/xrt2cq" target="_blank" rel="noopener noreferrer" aria-label="Confirmar presença pelo WhatsApp"></a>
+          </nav>
+
+          <button class="audio-button" id="audio-button" type="button" aria-label="Silenciar a música">
+            <span id="audio-icon" aria-hidden="true">🔊</span>
+            <span id="audio-message" hidden>Toque para ouvir</span>
+          </button>
+        </section>
+      </div>
+
+      <audio id="music" src="assets/enquanto-eu-te-adoro.mp3" preload="metadata" playsinline loop></audio>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
